@@ -1,0 +1,15 @@
+<p>
+    <!--[(ngModel)]="NameOfTheVar"-->
+    <label for="user">Username: </label>
+    <input [(ngModel)]="username" type="text" id="user" (ngModelChange)="ongModelChange()" >
+    <!--(ngModelChange)="username = $event"-->
+</p>
+
+<p>The username you just entered: <span [innerText]="username"></span></p>
+<!--is equal to= <p>The username you just entered: {{username}}</p>-->
+
+   
+<button [disabled]="!btEnabled" (click)="onBtClick()">
+    clear
+</button>
+<br> <br>

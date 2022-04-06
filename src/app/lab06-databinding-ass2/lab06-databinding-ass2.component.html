@@ -1,0 +1,6 @@
+<p>
+    <label for="user">Word: </label> <input [(ngModel)]="word" type="text" id="user">
+    <button (click)="onBtnClick()">Add Word</button>
+    <button [disabled]="!btEnabled" (click)="onBtn2Click()" [innerText]="btnSentence"></button>
+</p> 
+<p [innerText]="this.isShow ? this.sentence : '' " ></p>
